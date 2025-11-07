@@ -1,11 +1,33 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Colllection from './pages/Colllection'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Product from './pages/Product'
+import Cart from './pages/Cart'
+import Login from './pages/Login'
+import Orders from './pages/Orders'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div>
-      <h1>Welcome to the App!</h1>
+    <div className=' px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] '>
+      <Navbar />
+      <Routes>
+        <Route path ='/' element={<Home/>}></Route>
+        <Route path='/collection' element={<Colllection />}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/product/:productId' element={<Product />}></Route>
+        <Route path='/cart' element={<Cart />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/orders' element={<Orders />}></Route> 
+        <Route path='/place-order' element={<Orders />}></Route> 
+      </Routes>
     </div>
   )
 }
 
 export default App
+31
