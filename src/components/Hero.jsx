@@ -26,4 +26,3 @@ const Hero = () => {
 }
 
 export default Hero
-10447
