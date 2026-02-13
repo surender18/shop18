@@ -171,7 +171,7 @@ export const products = [
     {
         _id: "aaaag",
         name: "Men Tapered Fit Flat-Front Trousers",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "  ",
         price: 190,
         image: [p_img7],
         category: "Men",
